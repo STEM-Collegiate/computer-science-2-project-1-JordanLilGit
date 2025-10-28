@@ -14,4 +14,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 #Function to increase score
 func _on_area_2d_2_body_entered(body: Node2D) -> void:
 	Manager.score += 1
+	if Manager.score > Manager.highscore:
+		Manager.highscore = Manager.score
 	pass

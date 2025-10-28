@@ -10,6 +10,7 @@ func _ready() -> void:
 #Make label display score
 func _process(delta: float) -> void:
 	$Label.text = str(Manager.score)
+	$Label2.text = str(Manager.highscore)
 
 #Timer function
 func _on_timer_timeout() -> void:
