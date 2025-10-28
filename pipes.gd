@@ -1,7 +1,7 @@
 extends Node2D
 
 #Set values
-var speed: float = 250
+var speed: float = 350
 
 #Function to move forward
 func _physics_process(delta: float) -> void:
